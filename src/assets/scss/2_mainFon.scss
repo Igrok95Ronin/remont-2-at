@@ -1,0 +1,55 @@
+.mainFon {
+    padding: 0 0 35px;
+}
+.mainFon__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.mainFon__left {
+}
+.mainFon__imgW {
+}
+.mainFon__img {
+    width: 100%;
+    height: 100%;
+}
+.mainFon__ul {
+    background-color: $mainColor;
+    padding-bottom: 50px;
+    li{
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 5px 10px 50px;
+        position: relative;
+        font-size: 18px;
+        &::before {
+            content: "❯";
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.mainFon__inner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -20px;
+}
+.mainFon__btn {
+    @include btn;
+}
+.mainFon__btnM {
+    @include btn;
+    padding: 10px 20px;
+}
+.mainFon__right {
+}
+.mainFon__imgCommit {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

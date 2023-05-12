@@ -46,5 +46,29 @@ $btnColor : #54be99;
 
 
 @mixin btn {
-
+    background-color: $btnColor;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 20px 10px 50px;
+    span{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/ok4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+        }
+    }
+    &:hover {
+        color: #fff;
+    }
 }
