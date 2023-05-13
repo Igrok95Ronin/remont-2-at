@@ -1,0 +1,22 @@
+.forms {
+    padding: 0 0 20px;
+}
+.forms__box {
+}
+.forms__title {
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 5px 10px 40px;
+    font-size: 24px;
+    position: relative;
+    &::before{
+        content: '❯';
+        position: absolute;
+        left: 10px;
+    }
+}
+.forms__button {
+    @include btn;
+    border-radius: 5px;
+}
