@@ -1,0 +1,50 @@
+.dismantling {
+    padding: 0 0 35px;
+}
+.dismantling__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.dismantling__left {
+}
+.dismantling__imgW {
+    max-width: 100%;
+    max-height: 100%;
+}
+.dismantling__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dismantling__title {
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 5px 10px 40px;
+    font-size: 28px;
+    position: relative;
+    &::before{
+        content: '❯';
+        position: absolute;
+        left: 10px;
+    }
+}
+.dismantling__right {
+}
+.dismantling__txt {
+    line-height: 26px;
+}
+.dismantling__btnW {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.dismantling__btn {
+    @include btn;
+}
+.dismantling__btnM {
+    @include btn;
+    padding-left: 20px;
+}
